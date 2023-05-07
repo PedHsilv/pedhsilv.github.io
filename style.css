@@ -1,0 +1,60 @@
+body {
+  background-color: aquamarine;
+  align-items: center;
+}
+
+.container {
+  display: inline-flex;
+  border-radius: 34px;
+  border-color: 35px aliceblue;
+  background-color: grey;
+  min-width: 700px;
+}
+
+.fotoperfil {
+  border-radius: 90px;
+}
+
+.nome,
+.idade {
+  padding: 14px;
+  font-family: monospace;
+}
+
+.nome {
+  color: antiquewhite;
+}
+.idade {
+  color: bisque;
+}
+
+.topico {
+  text-decoration: underline;
+  font-size: 30px;
+  color: aquamarine;
+}
+
+p,
+h3 {
+  max-width: 720px;
+  padding: 12px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 17px;
+  font-family: cursive;
+}
+
+a {
+  color: rgb(62, 151, 147);
+}
+
+footer {
+  background: green;
+  text-align: center;
+}
