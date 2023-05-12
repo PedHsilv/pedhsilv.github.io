@@ -1,37 +1,84 @@
 body {
   background-color: aquamarine;
   align-items: center;
+  max-width: 1180px;
+  min-width: 380px;
 }
 
-.container {
-  display: inline-flex;
-  border-radius: 34px;
-  border-color: 35px aliceblue;
-  background-color: grey;
-  min-width: 700px;
+.cartao-visita {
+  display: grid;
+  grid-template-rows: 96px 48px 48px 1fr;
+  grid-template-columns: 3fr;
+  border-radius: 20px 20px 16px 16px;
+  background-color: rgba(128, 128, 128, 0.473);
+  cursor: pointer;
+  max-width: 1180px;
+  min-width: 380px;
 }
 
-.fotoperfil {
-  border-radius: 90px;
+.cartao-visita:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.nome,
-.idade {
-  padding: 14px;
-  font-family: monospace;
+.back {
+  grid-row: 1/3;
+  grid-column: 1 /-1;
 }
 
-.nome {
-  color: antiquewhite;
+.back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
 }
-.idade {
-  color: bisque;
+
+.avatar {
+  grid-row: 2/4;
+  grid-column: 1/-1;
+  padding: 0 24px;
+  z-index: 1;
+}
+
+.avatar img {
+  height: 100%;
+  aspect-ratio: 1 /1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.meu-nome {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 16px 0px 8px 0px;
 }
 
 .topico {
   text-decoration: underline;
   font-size: 30px;
   color: aquamarine;
+}
+
+.topico:hover {
+  text-decoration: dashed;
+  color: rgba(50, 207, 147, 0.692);
+}
+
+.container {
+  border: 8px greenyellow solid;
+  border-radius: 24px;
+}
+
+.dados {
+  grid-row: 4/5;
+  grid-column: 1 /-1;
+  padding: 0px 24px 24px 24px;
+}
+
+.sobre {
+  padding: 10px;
+  border: solid greenyellow 4px;
+  border-radius: 14px;
 }
 
 p,
@@ -55,6 +102,6 @@ a {
 }
 
 footer {
-  background: green;
+  background: rgba(0, 128, 0, 0.377);
   text-align: center;
 }
