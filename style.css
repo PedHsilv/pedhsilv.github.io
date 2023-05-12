@@ -1,14 +1,16 @@
 body {
-  background-color: aquamarine;
-  align-items: center;
+  background-color: rgba(49, 70, 55, 0.753);
   max-width: 1180px;
   min-width: 380px;
+  align-content: center;
+  margin: 0;
+  padding: 3px;
 }
 
 .cartao-visita {
   display: grid;
   grid-template-rows: 96px 48px 48px 1fr;
-  grid-template-columns: 3fr;
+  grid-template-columns: 2fr;
   border-radius: 20px 20px 16px 16px;
   background-color: rgba(128, 128, 128, 0.473);
   cursor: pointer;
@@ -54,9 +56,9 @@ body {
 }
 
 .topico {
-  text-decoration: underline;
   font-size: 30px;
   color: aquamarine;
+  max-width: 330px;
 }
 
 .topico:hover {
@@ -65,8 +67,8 @@ body {
 }
 
 .container {
-  border: 8px greenyellow solid;
-  border-radius: 24px;
+  background: rgba(128, 128, 128, 0.253);
+  border-radius: 4px;
 }
 
 .dados {
@@ -76,9 +78,15 @@ body {
 }
 
 .sobre {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 1180px;
+  min-width: 380px;
   padding: 10px;
-  border: solid greenyellow 4px;
+  background: rgba(128, 128, 128, 0.26);
+  /*border: solid rgba(172, 255, 47, 0.158) 4px;*/
   border-radius: 14px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 p,
@@ -89,12 +97,15 @@ h3 {
 }
 
 h3 {
-  font-size: 22px;
+  background: rgba(138, 184, 73, 0.158);
+  text-align: center;
+  color: rgb(166, 180, 127);
+  font-size: 25px;
 }
 
 p {
   font-size: 17px;
-  font-family: cursive;
+  font-family: monospace;
 }
 
 a {
@@ -102,6 +113,6 @@ a {
 }
 
 footer {
-  background: rgba(0, 128, 0, 0.377);
+  background: rgba(25, 155, 90, 0.377);
   text-align: center;
 }
